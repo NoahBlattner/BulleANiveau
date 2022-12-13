@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     ConstraintLayout layout;
     ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(ConstraintLayout.LayoutParams.WRAP_CONTENT, ConstraintLayout.LayoutParams.WRAP_CONTENT);
     boolean layoutStarted = false;
-    int DPI = 0;
 
     double moveRange;
     double xBias = 0;
@@ -44,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        DPI = getResources().getDisplayMetrics().densityDpi;
 
         // Lock screen orientation to portrait
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
